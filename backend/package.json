@@ -8,7 +8,13 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mern", "marketplace", "apps", "express", "mongodb"],
+  "keywords": [
+    "mern",
+    "marketplace",
+    "apps",
+    "express",
+    "mongodb"
+  ],
   "author": "AppBazaar Team",
   "license": "MIT",
   "dependencies": {
