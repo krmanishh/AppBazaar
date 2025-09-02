@@ -94,23 +94,8 @@ AppBazaar/
    npm install
    ```
 
-3. **Environment Configuration**
-   - Copy `env.sample` to `.env`
-   - Update the following variables:
-     ```env
-     NODE_ENV=development
-     PORT=5000
-     MONGODB_URI=mongodb://localhost:27017/appbazaar
-     JWT_SECRET=your_jwt_secret_key_here
-     JWT_EXPIRE=7d
-     FRONTEND_URL=http://localhost:5173
-     
-     # Razorpay Payment Gateway
-     RAZORPAY_KEY_ID=rzp_test_your_test_key_id_here
-     RAZORPAY_KEY_SECRET=your_test_secret_key_here
-     ```
 
-4. **Start the server**
+3. **Start the server**
    ```bash
    # Development mode
    npm run dev
