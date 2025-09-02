@@ -241,24 +241,6 @@ AppBazaar/
 3. Configure environment variables
 4. Update API base URL
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Support
-
-For support and questions:
-- Create an issue in the repository
-- Check the documentation
-- Review the code examples
 
 ## 🔮 Future Enhancements
 
@@ -272,4 +254,5 @@ For support and questions:
 ---
 
 **AppBazaar** - Your Ultimate App Marketplace 🚀
+
 
