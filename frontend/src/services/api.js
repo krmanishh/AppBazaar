@@ -90,6 +90,29 @@ export const adminAPI = {
   getSystemHealth: () => api.get('/admin/health'),
 }
 
+// Auction API
+export const auctionAPI = {
+  getAuctions: (filters = {}) => api.get('/auctions', { params: filters }),
+  getFeaturedAuctions: () => api.get('/auctions/featured'),
+  getAuctionById: (auctionId) => api.get(`/auctions/${auctionId}`),
+  createAuction: (auctionData) => api.post('/auctions', auctionData),
+  updateAuction: (auctionId, auctionData) => api.put(`/auctions/${auctionId}`, auctionData),
+  deleteAuction: (auctionId) => api.delete(`/auctions/${auctionId}`),
+  submitBid: (auctionId, bidData) => api.post(`/auctions/${auctionId}/bid`, bidData),
+  acceptBid: (auctionId, bidId) => api.put(`/auctions/${auctionId}/bid/${bidId}/accept`),
+  getUserAuctions: () => api.get('/auctions/user/my-auctions'),
+  getUserBids: () => api.get('/auctions/user/my-bids'),
+}
+
+// Payment API
+export const paymentAPI = {
+  createOrder: (orderData) => api.post('/payments/create-order', orderData),
+  verifyPayment: (verificationData) => api.post('/payments/verify', verificationData),
+  getUserPayments: (filters = {}) => api.get('/payments/user/payments', { params: filters }),
+  getPaymentById: (paymentId) => api.get(`/payments/${paymentId}`),
+  processRefund: (refundData) => api.post('/payments/refund', refundData),
+}
+
 // Health check
 export const healthCheck = () => api.get('/health')
 
